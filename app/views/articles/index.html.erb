@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Articles</h1>
+<%= link_to "New article", new_article_path %>
+
+<div id="articles">
+  <table>
+    <thead style="width:100%">
+      <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @articles %>
+    </tbody>
+  </table>
+  
+</div>
